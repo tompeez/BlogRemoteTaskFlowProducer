@@ -1,0 +1,24 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SDM>
+   <OverallProperties
+      id="OverallProperties1"/>
+   <View
+      id="View3">
+      <property
+         name="activityId">dep</property>
+      <property
+         name="pageFragment">true</property>
+      <property
+         name="x">394.0</property>
+      <property
+         name="start">true</property>
+      <property
+         name="description">&lt;html>&lt;p>&lt;b>dep&lt;/b> (Default Activity)&lt;/p>&lt;p>Activity Type:  View&lt;/p></property>
+      <property
+         name="y">180.89648</property>
+      <property
+         name="page">/dep.jsff</property>
+      <property
+         name="exceptionHandler">false</property>
+   </View>
+</SDM>

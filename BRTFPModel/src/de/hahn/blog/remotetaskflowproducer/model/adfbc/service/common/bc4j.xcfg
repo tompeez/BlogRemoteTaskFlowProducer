@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig version="11.1" xmlns="http://xmlns.oracle.com/bc4j/configuration">
+   <AppModuleConfigBag ApplicationName="de.hahn.blog.remotetaskflowproducer.model.adfbc.service.BRTFPAppModule">
+      <AppModuleConfig name="BRTFPAppModuleLocal" jbo.project="de.hahn.blog.remotetaskflowproducer.model.BRTFPModel" ApplicationName="de.hahn.blog.remotetaskflowproducer.model.adfbc.service.BRTFPAppModule" DeployPlatform="LOCAL">
+         <Database jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="de.hahn.blog.remotetaskflowproducer.model.adfbc.service.BRTFPAppModule"/>
+         <Custom ns0:JDBCDataSource="java:comp/env/jdbc/HRConnDS" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+      <AppModuleConfig name="BRTFPAppModuleShared" jbo.project="de.hahn.blog.remotetaskflowproducer.model.BRTFPModel" ApplicationName="de.hahn.blog.remotetaskflowproducer.model.adfbc.service.BRTFPAppModule" DeployPlatform="LOCAL">
+         <AM-Pooling jbo.ampool.maxpoolsize="1" jbo.ampool.isuseexclusive="false"/>
+         <Database jbo.TypeMapEntries="OracleApps"/>
+         <Security AppModuleJndiName="de.hahn.blog.remotetaskflowproducer.model.adfbc.service.BRTFPAppModule"/>
+         <Custom ns0:JDBCDataSource="java:comp/env/jdbc/HRConnDS" xmlns:ns0="http://xmlns.oracle.com/bc4j/configuration"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+</BC4JConfig>

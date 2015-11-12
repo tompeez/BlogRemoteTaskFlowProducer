@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<!DOCTYPE AppModule SYSTEM "jbo_03_01.dtd">
+<!---->
+<AppModule
+  xmlns="http://xmlns.oracle.com/bc4j"
+  Name="BRTFPAppModule"
+  Version="12.2.1.0.31"
+  InheritPersonalization="merge"
+  ClearCacheOnRollback="true">
+  <ViewUsage
+    Name="DepartmentsView1"
+    ViewObjectName="de.hahn.blog.remotetaskflowproducer.model.adfbc.views.DepartmentsView"/>
+  <ViewUsage
+    Name="EmployeesView1"
+    ViewObjectName="de.hahn.blog.remotetaskflowproducer.model.adfbc.views.EmployeesView"/>
+  <ViewUsage
+    Name="EmployeesView2"
+    ViewObjectName="de.hahn.blog.remotetaskflowproducer.model.adfbc.views.EmployeesView"/>
+  <ViewUsage
+    Name="EmployeesView3"
+    ViewObjectName="de.hahn.blog.remotetaskflowproducer.model.adfbc.views.EmployeesView"/>
+  <ViewUsage
+    Name="DepartmentsView2"
+    ViewObjectName="de.hahn.blog.remotetaskflowproducer.model.adfbc.views.DepartmentsView"/>
+  <ViewLinkUsage
+    Name="EmpManagerFkLink1"
+    ViewLinkObjectName="de.hahn.blog.remotetaskflowproducer.model.adfbc.views.EmpManagerFkLink"
+    SrcViewUsageName="de.hahn.blog.remotetaskflowproducer.model.adfbc.service.BRTFPAppModule.EmployeesView1"
+    DstViewUsageName="de.hahn.blog.remotetaskflowproducer.model.adfbc.service.BRTFPAppModule.EmployeesView2"
+    Reversed="false"/>
+  <ViewLinkUsage
+    Name="EmpDeptFkLink1"
+    ViewLinkObjectName="de.hahn.blog.remotetaskflowproducer.model.adfbc.views.EmpDeptFkLink"
+    SrcViewUsageName="de.hahn.blog.remotetaskflowproducer.model.adfbc.service.BRTFPAppModule.DepartmentsView1"
+    DstViewUsageName="de.hahn.blog.remotetaskflowproducer.model.adfbc.service.BRTFPAppModule.EmployeesView3"
+    Reversed="false"/>
+  <ViewLinkUsage
+    Name="DeptMgrFkLink1"
+    ViewLinkObjectName="de.hahn.blog.remotetaskflowproducer.model.adfbc.views.DeptMgrFkLink"
+    SrcViewUsageName="de.hahn.blog.remotetaskflowproducer.model.adfbc.service.BRTFPAppModule.EmployeesView1"
+    DstViewUsageName="de.hahn.blog.remotetaskflowproducer.model.adfbc.service.BRTFPAppModule.DepartmentsView2"
+    Reversed="false"/>
+</AppModule>
